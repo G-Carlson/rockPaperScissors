@@ -10,14 +10,17 @@
         function computerplay(){
            //generate random letter N,A,U
            let randomLetter = Math.ceil(Math.random()*3);
-           if(randomLetter == N){
-               return "paper");
-           }else if(randomLetter == A){
-               return "rock"
+           if(randomLetter == 1){
+               return "paper";
+           }else if(randomLetter == 2){
+               return "rock";
+           }else{
+               return "scissors"
            }
 
         }
-        
+        const computerselection =computerplay();
+        console.log(computerselection)
     </script>
 </body>
 </html>
