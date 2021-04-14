@@ -8,11 +8,11 @@
 <body>
     <script>
         function computerplay(){
-           //generate random letter N,A,U
-           let randomLetter = Math.ceil(Math.random()*3);
-           if(randomLetter == 1){
+           //generate random number 1,2,3
+           let randomNumber = Math.ceil(Math.random()*3);
+           if(randomNumber == 1){
                return "paper";
-           }else if(randomLetter == 2){
+           }else if(randomNumber == 2){
                return "rock";
            }else{
                return "scissors"
@@ -21,6 +21,11 @@
         }
         const computerselection =computerplay();
         console.log(computerselection)
+        function singleround(playerselection, computerselection){
+            if(playerselection == computerselection){
+                console.log(tie: you choose ${playerselection}, {computerselection})
+            }
+        }
     </script>
 </body>
 </html>
