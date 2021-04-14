@@ -19,13 +19,43 @@
            }
 
         }
-        const computerselection =computerplay();
-        console.log(computerselection)
+        
         function singleround(playerselection, computerselection){
             if(playerselection == computerselection){
-                console.log(tie: you choose ${playerselection}, {computerselection})
+                console.log(`tie: you choose ${playerselection}, ${computerselection}`);
+                return 0;
+            }else if(playerselection == "rock"&&computerselection=="paper"){
+                console.log(`loss: you choose ${playerselection}, ${computerselection}`);
+                return -1;
+            }else if(playerselection == "rock"&&computerselection=="scissors"){
+                console.log(`win: you choose ${playerselection}, ${computerselection}`);
+                return 1;
+            }else if(playerselection == "paper"&&computerselection=="rock"){
+                console.log(`lwin: you choose ${playerselection}, ${computerselection}`);
+                return 1;
+            }else if(playerselection == "paper"&&computerselection=="scissors"){
+                console.log(`loss: you choose ${playerselection}, ${computerselection}`);
+                return -1;
+            }else if(playerselection == "scissors"&&computerselection=="paper"){
+                console.log(`win: you choose ${playerselection}, ${computerselection}`);
+                return 1;
+            }else if(playerselection == "scissors"&&computerselection=="rock"){
+                console.log(`loss: you choose ${playerselection}, ${computerselection}`);
+                return -1;
             }
+        }   
+        function gameplay(){
+            let score=0;
+            let computerselection =computerplay();
+            let playerselection= prompt("select rock paper scissors").toLowerCase();
+            score += singleround(computerselection,playerselection);
+            
+            consle.log
+            console.log(score)
+            consle.log(`final score : ${score}`);
+
         }
+        gameplay();
     </script>
 </body>
 </html>
