@@ -50,9 +50,15 @@
             let playerselection= prompt("select rock paper scissors").toLowerCase();
             score += singleround(computerselection,playerselection);
             
-            consle.log
             console.log(score)
             consle.log(`final score : ${score}`);
+            if (score ==0){
+                console.log(`he match was a draw`);
+            }else if (score >0){
+                consle.log(`you win`);
+            }else{
+                console.log(`you lost`);
+            }
 
         }
         gameplay();
