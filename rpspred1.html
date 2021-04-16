@@ -31,7 +31,7 @@
                 console.log(`win: you choose ${playerselection}, ${computerselection}`);
                 return 1;
             }else if(playerselection == "paper"&&computerselection=="rock"){
-                console.log(`lwin: you choose ${playerselection}, ${computerselection}`);
+                console.log(`win: you choose ${playerselection}, ${computerselection}`);
                 return 1;
             }else if(playerselection == "paper"&&computerselection=="scissors"){
                 console.log(`loss: you choose ${playerselection}, ${computerselection}`);
@@ -51,17 +51,17 @@
             score += singleround(computerselection,playerselection);
             
             console.log(score)
-            consle.log(`final score : ${score}`);
-            if (score ==0){
-                console.log(`he match was a draw`);
+           console.log(`final score : ${score}`)
+             if (score ==0){
+                console.log(`the match was a draw`);
             }else if (score >0){
-                consle.log(`you win`);
+                console.log(`you win`);
             }else{
-                console.log(`you lost`);
-            }
-
+                console.log(`you lost`);  
+           }
         }
         gameplay();
+        
     </script>
 </body>
 </html>
